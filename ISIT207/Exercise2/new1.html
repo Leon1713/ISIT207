@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to my HTML5 Practice Page</h1>
+    <nav>
+        <a href="new1.html">Home</a> |
+        <a href="new2.html">About</a> |
+        <a href="new3.html">Contact</a>
+    </nav>
+    
+    <hr>
+    <section></section>
+        <h2>About HTML</h2>
+        <p><strong>HTML</strong> stands for HyperText Markup Language. It is the standard language for creating web pages and web applications.</p>
+    </section>
+    <section>
+        <h2>My favourite foods</h2>
+        <ul>
+            <li>Pizza</li>
+            <li>Sushi</li>
+            <li>Chocolate</li>
+        </ul>
+        <h3> Steps to make tea</h3>
+        <ol>
+            <li>Boil water</li>
+            <li>Add tea leaves</li>
+            <li>Steep for 5 minutes</li>
+            <li>Strain and serve</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Media Examples</h2>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgGC6l_fPjYAVIjpLvYygWGVA6k9HBuv5qZvdmhMx2Ta1DqMHw" alt="Placeholder Image" width="500" height="300">
+        <br>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/kTmHcUbmrqM" allowfullscreen>    
+        </iframe>
+
+        <br>
+        <audio controls></audio>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <br>
+    <section>
+        <h2 style="margin:0 0 0em 0;">Sample Table</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+                
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+                
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>35</td>
+                
+            </tr>
+        </table>
+    </section>
+    <section id="contact form" onsubmit="alert('submitted form'); return false;">
+        <h2>Contact Form</h2>
+        <form action="#" method = "get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <br>
+    <p>Do you know <strong>HTML</strong> is the standard markup language for creating web pages?</p>
+    <footer>
+        <p>&copy; 2024 My HTML5 Practice Page | <a href="#">Privacy Policy</a></p> <!-- not sure how to add the | without actually typing it-->
+</footer>   
+</body>
+</html>
