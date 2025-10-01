@@ -1,280 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Example HTML + CSS</title>
-    <style>
-        :root{
-            --bg:#0f1724;
-            --card:#0b1220;
-            --accent:#5eead4;
-            --muted:#94a3b8;
-            --white:#f8fafc;
-            --radius:12px;
-            --max-width:1100px;
-            --gap:1.25rem;
-            --glass: rgba(255,255,255,0.03);
-        }
-
-        /* Basic reset */
-        *,*::before,*::after{box-sizing:border-box}
-        html,body{height:100%}
-        body{
-            margin:0;
-            font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-            background:
-                linear-gradient(180deg, rgba(7,10,18,1) 0%, rgba(10,14,22,1) 100%);
-            color:var(--white);
-            -webkit-font-smoothing:antialiased;
-            -moz-osx-font-smoothing:grayscale;
-            line-height:1.45;
-            padding:2rem 1rem;
-            display:flex;
-            justify-content:center;
-        }
-
-        .wrap{
-            width:100%;
-            max-width:var(--max-width);
-        }
-
-        header{
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            gap:var(--gap);
-            margin-bottom:1.75rem;
-        }
-
-        .brand{
-            display:flex;
-            align-items:center;
-            gap:0.75rem;
-            text-decoration:none;
-            color:var(--white);
-        }
-
-        .logo{
-            width:44px;
-            height:44px;
-            display:inline-grid;
-            place-items:center;
-            background:linear-gradient(135deg,var(--accent),#60a5fa);
-            color:#07203a;
-            font-weight:700;
-            border-radius:10px;
-            box-shadow:0 6px 18px rgba(5,10,20,0.6);
-        }
-
-        nav{
-            display:flex;
-            gap:1rem;
-            align-items:center;
-            flex-wrap:wrap;
-        }
-
-        nav a{
-            color:var(--muted);
-            text-decoration:none;
-            padding:0.5rem 0.75rem;
-            border-radius:8px;
-            transition:all .18s ease;
-            font-size:0.95rem;
-        }
-
-        nav a:hover{
-            color:var(--white);
-            background:var(--glass);
-            transform:translateY(-2px);
-        }
-
-        /* Hero */
-        .hero{
-            background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-            border-radius:var(--radius);
-            padding:1.5rem;
-            display:grid;
-            grid-template-columns:1fr 340px;
-            gap:1.25rem;
-            align-items:stretch;
-            box-shadow:0 10px 30px rgba(2,6,23,0.6);
-            margin-bottom:1.5rem;
-        }
-
-        .hero .lead{
-            padding-right:0.5rem;
-        }
-
-        h1{
-            margin:0 0 0.5rem 0;
-            font-size:1.6rem;
-            letter-spacing:-0.02em;
-        }
-
-        p.lead{
-            margin:0 0 1rem 0;
-            color:var(--muted);
-        }
-
-        .cta-row{
-            display:flex;
-            gap:0.75rem;
-            flex-wrap:wrap;
-        }
-
-        .btn{
-            border:0;
-            cursor:pointer;
-            padding:0.6rem 0.9rem;
-            border-radius:9px;
-            font-weight:600;
-            color:var(--white);
-            background:linear-gradient(90deg,var(--accent),#60a5fa);
-            box-shadow:0 8px 20px rgba(94,234,212,0.12);
-        }
-
-        .btn.secondary{
-            background:transparent;
-            color:var(--muted);
-            border:1px solid rgba(255,255,255,0.04);
-            box-shadow:none;
-        }
-
-        .aside-card{
-            background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.015));
-            padding:1rem;
-            border-radius:10px;
-            color:var(--muted);
-            display:flex;
-            flex-direction:column;
-            gap:0.75rem;
-            align-items:flex-start;
-        }
-
-        .aside-card strong{color:var(--white)}
-
-        /* Features grid */
-        .grid{
-            display:grid;
-            gap:1rem;
-            grid-template-columns:repeat(3,1fr);
-        }
-
-        .card{
-            background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-            border-radius:12px;
-            padding:1rem;
-            box-shadow:0 6px 20px rgba(2,6,23,0.5);
-            transition:transform .16s ease, box-shadow .16s ease;
-        }
-
-        .card:hover{
-            transform:translateY(-6px);
-            box-shadow:0 12px 36px rgba(2,6,23,0.6);
-        }
-
-        .card h3{margin:0 0 0.5rem 0;font-size:1.05rem}
-        .card p{margin:0;color:var(--muted);font-size:0.95rem}
-
-        footer{
-            margin-top:1.25rem;
-            color:var(--muted);
-            text-align:center;
-            font-size:0.9rem;
-        }
-
-        /* responsive */
-        @media (max-width:980px){
-            .hero{grid-template-columns:1fr 1fr}
-            .grid{grid-template-columns:repeat(2,1fr)}
-        }
-        @media (max-width:640px){
-            header{flex-direction:column;align-items:stretch}
-            nav{justify-content:flex-start}
-            .hero{grid-template-columns:1fr;padding:1rem}
-            .grid{grid-template-columns:1fr}
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrap">
-        <header>
-            <a class="brand" href="#">
-                <span class="logo">CP</span>
-                <div>
-                    <div style="font-weight:700">Cool Project</div>
-                    <div style="font-size:0.85rem;color:var(--muted)">Example template</div>
-                </div>
-            </a>
-
-            <nav aria-label="Primary navigation">
-                <a href="#features">Features</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#docs">Docs</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-
-        <section class="hero" role="region" aria-labelledby="hero-title">
-            <div class="lead">
-                <h1 id="hero-title">Small, fast, and accessible starter</h1>
-                <p class="lead">A minimal HTML + CSS example to kickstart a small landing page or component library. Clean, responsive, and ready to customize.</p>
-
-                <div class="cta-row">
-                    <button class="btn">Get Started</button>
-                    <button class="btn secondary">Learn More</button>
-                </div>
-            </div>
-
-            <aside class="aside-card" aria-label="Quick stats">
-                <div><strong>Production-ready</strong></div>
-                <div>Lightweight styles, responsive grid, and accessible markup.</div>
-                <div style="margin-top:auto;color:var(--muted);font-size:0.9rem">Updated: 2025</div>
-            </aside>
-        </section>
-
-        <main>
-            <section id="features" style="margin-bottom:1rem">
-                <h2 style="margin:0 0 0.75rem 0">Features</h2>
-
-                <div class="grid">
-                    <article class="card">
-                        <h3>Responsive layout</h3>
-                        <p>Grid and flex utilities that adapt down to small screens without extra dependencies.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Accessible markup</h3>
-                        <p>Semantic elements and ARIA-ready roles to help assistive technologies.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Customizable tokens</h3>
-                        <p>Use CSS variables to quickly change colors, spacing, and shapes.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Subtle motion</h3>
-                        <p>Small transitions for hover states that enhance perceived responsiveness.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Lightweight</h3>
-                        <p>No frameworks, just plain HTML and CSS making it easy to integrate anywhere.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Starter friendly</h3>
-                        <p>Drop this file into your project and iterate. Replace copy, swap colors, extend structure.</p>
-                    </article>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            © 2025 • Example template — built with plain HTML & CSS
-        </footer>
+    <header>
+    <h1>Welcome to my HTML5 Practice Page</h1>
+    <nav>
+        <a href="new1.html">Home</a>
+        <a href="new2.html">About</a>
+        <a href="new3.html">Contact</a>
+    </nav>
+    </header>
+    <hr>
+    <section>
+        <h2>About HTML</h2>
+        <p><strong>HTML</strong> stands for HyperText Markup Language. It is the standard language for creating web pages and web applications.</p>
+    </section>
+    <section>
+        <h2>My favourite foods</h2>
+        <ul>
+            <li>Pizza</li>
+            <li>Sushi</li>
+            <li>Chocolate</li>
+        </ul>
+        <h3>Steps to make tea</h3>
+        <ol>
+            <li>Boil water</li>
+            <li>Add tea leaves</li>
+            <li>Steep for 5 minutes</li>
+            <li>Strain and serve</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Media Examples</h2>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgGC6l_fPjYAVIjpLvYygWGVA6k9HBuv5qZvdmhMx2Ta1DqMHw" alt="Placeholder Image" width="500" height="300">
+        <br>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/kTmHcUbmrqM" allowfullscreen></iframe>
+        <br>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <section>
+        <h2 style="margin:0 0 0em 0;">Sample Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>35</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact form" onsubmit="alert('submitted form'); return false;">
+        <h2>Contact Form</h2>
+        <form action="#" method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <div class="info">
+        Do you know <strong>HTML</strong> is the standard markup language for creating web pages?
     </div>
+    <footer>
+        <p>&copy; 2024 My HTML5 Practice Page <span style="color:#bbb;">|</span> <a href="#">Privacy Policy</a></p>
+    </footer>   
 </body>
 </html>
