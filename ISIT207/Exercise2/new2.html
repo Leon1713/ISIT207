@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
     <header>
     <h1>Welcome to my HTML5 Practice Page</h1>
@@ -37,17 +39,18 @@
     </section>
     <section>
         <h2>Media Examples</h2>
-        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgGC6l_fPjYAVIjpLvYygWGVA6k9HBuv5qZvdmhMx2Ta1DqMHw" alt="Placeholder Image" width="500" height="300">
+        <img src="https://funnyfuzzy.com/cdn/shop/articles/Samoyed_59201530-30c5-4cc2-80a9-d680485539b3.png?v=1742787343" alt="Sample Image" width="300px" class="responsive-img">
         <br>
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/kTmHcUbmrqM" allowfullscreen></iframe>
+        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/kTmHcUbmrqM" allowfullscreen class="responsive-video"></iframe>
         <br>
-        <audio controls>
+        <audio controls class="sample">
             <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
         </audio>
     </section>
     <section>
         <h2 style="margin:0 0 0em 0;">Sample Table</h2>
         <table>
+            <table border="1px solid black">
             <tr>
                 <th>Name</th>
                 <th>Age</th>
@@ -68,13 +71,16 @@
     </section>
     <section id="contact form" onsubmit="alert('submitted form'); return false;">
         <h2>Contact Form</h2>
-        <form action="#" method="get">
+        <form action="#" method = "get">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
+            
             <input type="submit" value="Submit">
         </form>
     </section>

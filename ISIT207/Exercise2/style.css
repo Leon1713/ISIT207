@@ -2,11 +2,15 @@
             font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, white 1%, chocolate 100%);
+            background: linear-gradient(135deg, white 0%, #f0f0f0 100%);
             color: #222;
             min-height: 100vh;
  }
-
+header {
+            background-color: lightblue;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+}
  header h1 {
             
             color: white;
@@ -16,29 +20,126 @@
             text-align: center;
  }
 
+ hr {
+    display: none;
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #ccc, transparent);
+            margin: 1rem 0;
+ }
+ 
  nav {
             
             padding: 0.5rem;
             text-align: center;
+            display: flex;
+            justify-content: center  ;
+            align-items: center;
  }
 nav a {
             margin: 0 1rem;
             text-decoration: none;
             color: white;
             font-weight: bold;
-            background-color: chocolate;
-            border-radius: 20px;
+            border-radius: 1px;
             padding: 0.5rem 1rem;
+            transition: background 0.3s;
  }
 nav a:hover {
-            background-color: darkorange;
-            color: white;
+    background-color: rgb(188, 227, 248);
  }
 
- hr {
-            border: none;
-            height: 2px;
-            background: chocolate;
-            margin: 1rem 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section {
+    margin: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #000000; /* soft, warm border */ 
+    box-shadow: 0 6px 18px rgba(196, 244, 246, 0.12); /* warm, chocolate-tinted shadow */
+    color: #2b1f18;
+    max-width: 800px;
+    padding: 20px auto;
+    margin: 20px auto;
+}
+
+audio
+{
+    justify-content: center;
+}
+
+.responsive-video {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    border: #000000 1px solid;
+}
+
+th {
+    background: lightblue;
+    color: white;
+}
+
+tr:hover {
+    background: lightblue;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: lightblue;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
